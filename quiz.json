@@ -1,0 +1,281 @@
+{
+    "id": 1,
+    "name": "plusdin-quiz",
+    "type": "boxed",
+    "title": "Descubra qual é o cartão de crédito ideal para você",
+    "subtitle": "(Leva menos de 1 minuto)",
+    "questions": [
+        {
+            "id": 1,
+            "position": 1,
+            "type": "single",
+            "title": "Você possui algum cartão de crédito?",
+            "subtitle": "Escolha uma resposta",
+            "value": "possui_cc",
+            "options": [
+                {
+                    "id": 1,
+                    "position": 1,
+                    "label": "Sim",
+                    "value": "sim"
+                },
+                {
+                    "id": 2,
+                    "position": 2,
+                    "label": "Não",
+                    "value": "nao"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "position": 2,
+            "type": "single",
+            "title": "O que é mais importante em um cartão de crédito para você?",
+            "subtitle": "Escolha uma resposta",
+            "value": "importante",
+            "options": [
+                {
+                    "id": 1,
+                    "position": 1,
+                    "label": "Limite de crédito alto",
+                    "value": "limite_de_credito_alto"
+                },
+                {
+                    "id": 2,
+                    "position": 2,
+                    "label": "Crédito imediato",
+                    "value": "credito_imediato"
+                },
+                {
+                    "id": 3,
+                    "position": 3,
+                    "label": "Sem consulta ao SPC / Serasa",
+                    "value": "sem_consulta_ao_spc_serasa "
+                },
+                {
+                    "id": 4,
+                    "position": 4,
+                    "label": "Anuidade grátis",
+                    "value": "anuidade_gratis"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "position": 3,
+            "type": "single",
+            "title": "Em qual grupo você se encaixa?",
+            "subtitle": "Escolha uma resposta",
+            "value": "job",
+            "options": [
+                {
+                    "id": 1,
+                    "position": 1,
+                    "label": "Autônomo",
+                    "value": "autonomo"
+                },
+                {
+                    "id": 2,
+                    "position": 2,
+                    "label": "Empreendedor",
+                    "value": "empreendedor"
+                },
+                {
+                    "id": 3,
+                    "position": 3,
+                    "label": "Empregado / Carteira Assinada",
+                    "value": "empregado_carteira_assinada"
+                },
+                {
+                    "id": 4,
+                    "position": 4,
+                    "label": "Aposentado / Pensionista",
+                    "value": "aposentado_pensionista"
+                },
+                {
+                    "id": 6,
+                    "position": 6,
+                    "label": "Desempregado",
+                    "value": "desempregado"
+                },
+                {
+                    "id": 7,
+                    "position": 7,
+                    "label": "Servidor Público",
+                    "value": "servidor_publico"
+                },
+                {
+                    "id": 8,
+                    "position": 8,
+                    "label": "Estudante",
+                    "value": "estudante"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "position": 4,
+            "type": "single",
+            "title": "Qua é a sua renda mensal?",
+            "subtitle": "Escolha uma resposta",
+            "value": "renda",
+            "options": [
+                {
+                    "id": 1,
+                    "position": 1,
+                    "label": "Até R$1.000,00",
+                    "value": "ate_1000"
+                },
+                {
+                    "id": 2,
+                    "position": 2,
+                    "label": "De R$1.000,00 a R$2.000,00",
+                    "value": "entre_1000_e_2000"
+                },
+                {
+                    "id": 3,
+                    "position": 3,
+                    "label": "De R$2.000,00 a R$4.000,00",
+                    "value": "entre_2000_e_4000"
+                },
+                {
+                    "id": 4,
+                    "position": 4,
+                    "label": "Acima de R$4.000,00",
+                    "value": "acima_de_4000"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "position": 5,
+            "type": "single",
+            "title": "Você está negativado?",
+            "subtitle": "Escolha uma resposta",
+            "value": "negativado",
+            "options": [
+                {
+                    "id": 1,
+                    "position": 1,
+                    "label": "Sim",
+                    "value": "sim"
+                },
+                {
+                    "id": 2,
+                    "position": 2,
+                    "label": "Não",
+                    "value": "nao"
+                }
+            ]
+        }
+    ],
+    "endForm": {
+        "subtitle": "Fantástico!",
+        "title": "Encontramos o cartão perfeito para você.",
+        "call": "Para seguir, preencha abaixo:",
+        "fields": [
+            {
+                "id": 1,
+                "position": 1,
+                "type": "text",
+                "label": "Nome:",
+                "fieldValue": "name",
+                "placeholder": "Digite seu nome"
+            },
+            {
+                "id": 2,
+                "position": 2,
+                "type": "email",
+                "label": "E-mail:",
+                "fieldValue": "email",
+                "placeholder": "Nos informe seu e-mail de contato"
+            },
+            {
+                "id": 3,
+                "position": 3,
+                "type": "tel",
+                "pattern": "([0-9]{2}) [0-9]{5}-[0-9]{4}",
+                "label": "WhatsApp:",
+                "fieldValue": "phone",
+                "placeholder": "(XX) 99999-9999"
+            }
+        ],
+        "button": "VER MEU CARTÃO"
+    },
+    "remoteConfigs": {
+        "googleKeys": {
+            "gtmTag": "https://www.googletagmanager.com/gtm.js?id=GTM-T87Z4LK",
+            "gaKey": "https://connectid.analytics.yahoo.com/connectId-gpt.js",
+            "adsKey": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+        },
+        "bmsKeys": {
+            "apiKey": ""
+        }
+    },
+    "trackings": {
+        "pageLoad": [],
+        "userClick": [],
+        "userAnswer": [],
+        "formSubmit": ["console.log('SUBMIT FORM', getFormData())"]
+    },
+    "conversions": {
+        "headerElements": [],
+        "importedScripts": [{}],
+        "customScripts": [{}],
+        "postConversionWithoutLead": [{}],
+        "postConversionWithLead": [{}],
+        "redirectionParams": [{}]
+    },
+    "recomendation": {
+        "recomendationOptions": [
+            {
+                "id": 1,
+                "name": "facebook",
+                "url": "https://www.facebook.com"
+            },
+            {
+                "id": 2,
+                "name": "instagram",
+                "url": "https://www.instagram.com"
+            }
+        ],
+        "recomendationsConnections": [
+            {
+                "utmCondition": "utm_source=google",
+                "answerCondition": [
+                    {
+                        "questionIndex": 1,
+                        "answerIndex": 1
+                    },
+                    {
+                        "questionIndex": 2,
+                        "answerIndex": 1
+                    },
+                    {
+                        "questionIndex": 3,
+                        "answerIndex": 1
+                    },
+                    {
+                        "questionIndex": 4,
+                        "answerIndex": 1
+                    },
+                    {
+                        "questionIndex": 5,
+                        "answerIndex": 1
+                    }
+                ],
+                "recomendations": [
+                    {
+                        "url": "https://www.instagram.com",
+                        "percentage": 0.5
+                    },
+                    {
+                        "url": "https://www.facebook.com",
+                        "percentage": 0.5
+                    }
+                ]
+            }
+        ]
+    }
+}
