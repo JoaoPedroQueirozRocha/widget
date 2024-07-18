@@ -1,234 +1,321 @@
 {
+    "conversions": {
+        "customScripts": [
+            {
+                "customScript": "<style> .use-terms{ text-decoration: underline; } </style>",
+                "insertionPlace": "head"
+            }
+        ],
+        "postConversionWithLead": [
+            {
+                "customConversionScripts": "console.log(\"post conversion\")",
+                "source": ""
+            }
+        ],
+        "postConversionWithoutLead": [
+            {
+                "customConversionScripts": "console.log(\"post conversion without lead\")"
+            }
+        ],
+        "redirectionParams": [{}]
+    },
+    "defaultSugestion": "https://plusdin.com",
+    "endForm": {
+        "button": "VER MEU CARTÃO",
+        "call": "Para seguir, preencha abaixo:",
+        "fields": [
+            {
+                "errorMessage": "Ops, nome inválido. Tente novamente. 🙂",
+                "fieldValue": "name",
+                "id": 1,
+                "label": "Nome:",
+                "placeholder": "Digite seu nome",
+                "position": 1,
+                "type": "text"
+            },
+            {
+                "errorMessage": "Ops, nós te enviamos um e-mail e ele não foi aberto, por favor insira um novo e-mail 🙂",
+                "fieldValue": "email",
+                "id": 2,
+                "label": "E-mail:",
+                "placeholder": "Nos informe seu e-mail de contato",
+                "position": 2,
+                "type": "email"
+            }
+        ],
+        "subtitle": "Fantástico!",
+        "title": "Encontramos o cartão perfeito para você."
+    },
     "id": 1,
+    "loaderPage": {
+        "loaderElement": "public/images/dudinha.png",
+        "topText": {
+            "topMainText": "Aguarde um momento, estamos procurando o melhor cartão para você",
+            "topSubtext": "Isso vai levar apenas alguns segundos"
+        },
+        "bottomText": {
+            "bottomTopText": "Aguarde um momento, estamos procurando o melhor cartão para você",
+            "bottomMiddleText": "Isso vai levar apenas alguns segundos",
+            "bottomBottomText": "Aguarde um momento, estamos procurando o melhor cartão para você"
+        }
+    },
     "name": "plusdin-quiz",
-    "type": "boxed",
-    "title": "Descubra qual é o cartão de crédito ideal para você",
-    "subtitle": "(Leva menos de 1 minuto)",
     "questions": [
         {
             "id": 1,
-            "position": 1,
-            "type": "single",
-            "title": "Você possui algum cartão de crédito?",
-            "subtitle": "Escolha uma resposta",
-            "value": "possui_cc",
             "options": [
                 {
                     "id": 1,
-                    "position": 1,
                     "label": "Sim",
+                    "position": 1,
                     "value": "sim"
                 },
                 {
                     "id": 2,
-                    "position": 2,
                     "label": "Não",
+                    "position": 2,
                     "value": "nao"
                 }
-            ]
+            ],
+            "position": 1,
+            "subtitle": "Escolha uma resposta",
+            "title": "Você possui algum cartão de crédito?",
+            "type": "single",
+            "value": "possui_cc"
         },
         {
             "id": 2,
-            "position": 2,
-            "type": "single",
-            "title": "O que é mais importante em um cartão de crédito para você?",
-            "subtitle": "Escolha uma resposta",
-            "value": "importante",
             "options": [
                 {
                     "id": 1,
-                    "position": 1,
                     "label": "Limite de crédito alto",
+                    "position": 1,
                     "value": "limite_de_credito_alto"
                 },
                 {
                     "id": 2,
-                    "position": 2,
                     "label": "Crédito imediato",
+                    "position": 2,
                     "value": "credito_imediato"
                 },
                 {
                     "id": 3,
-                    "position": 3,
                     "label": "Sem consulta ao SPC / Serasa",
+                    "position": 3,
                     "value": "sem_consulta_ao_spc_serasa "
                 },
                 {
                     "id": 4,
-                    "position": 4,
                     "label": "Anuidade grátis",
+                    "position": 4,
                     "value": "anuidade_gratis"
                 }
-            ]
+            ],
+            "position": 2,
+            "subtitle": "Escolha uma resposta",
+            "title": "O que é mais importante em um cartão de crédito para você?",
+            "type": "single",
+            "value": "importante"
         },
         {
             "id": 3,
-            "position": 3,
-            "type": "single",
-            "title": "Em qual grupo você se encaixa?",
-            "subtitle": "Escolha uma resposta",
-            "value": "job",
             "options": [
                 {
                     "id": 1,
-                    "position": 1,
                     "label": "Autônomo",
+                    "position": 1,
                     "value": "autonomo"
                 },
                 {
                     "id": 2,
-                    "position": 2,
                     "label": "Empreendedor",
+                    "position": 2,
                     "value": "empreendedor"
                 },
                 {
                     "id": 3,
-                    "position": 3,
                     "label": "Empregado / Carteira Assinada",
+                    "position": 3,
                     "value": "empregado_carteira_assinada"
                 },
                 {
                     "id": 4,
-                    "position": 4,
                     "label": "Aposentado / Pensionista",
+                    "position": 4,
                     "value": "aposentado_pensionista"
                 },
                 {
                     "id": 6,
-                    "position": 6,
                     "label": "Desempregado",
+                    "position": 6,
                     "value": "desempregado"
                 },
                 {
                     "id": 7,
-                    "position": 7,
                     "label": "Servidor Público",
+                    "position": 7,
                     "value": "servidor_publico"
                 },
                 {
                     "id": 8,
-                    "position": 8,
                     "label": "Estudante",
+                    "position": 8,
                     "value": "estudante"
                 }
-            ]
+            ],
+            "position": 3,
+            "subtitle": "Escolha uma resposta",
+            "title": "Em qual grupo você se encaixa?",
+            "type": "single",
+            "value": "job"
         },
         {
             "id": 4,
-            "position": 4,
-            "type": "single",
-            "title": "Qua é a sua renda mensal?",
-            "subtitle": "Escolha uma resposta",
-            "value": "renda",
             "options": [
                 {
                     "id": 1,
-                    "position": 1,
                     "label": "Até R$1.000,00",
+                    "position": 1,
                     "value": "ate_1000"
                 },
                 {
                     "id": 2,
-                    "position": 2,
                     "label": "De R$1.000,00 a R$2.000,00",
+                    "position": 2,
                     "value": "entre_1000_e_2000"
                 },
                 {
                     "id": 3,
-                    "position": 3,
                     "label": "De R$2.000,00 a R$4.000,00",
+                    "position": 3,
                     "value": "entre_2000_e_4000"
                 },
                 {
                     "id": 4,
-                    "position": 4,
                     "label": "Acima de R$4.000,00",
+                    "position": 4,
                     "value": "acima_de_4000"
                 }
-            ]
+            ],
+            "position": 4,
+            "subtitle": "Escolha uma resposta",
+            "title": "Qua é a sua renda mensal?",
+            "type": "single",
+            "value": "renda"
         },
         {
             "id": 5,
-            "position": 5,
-            "type": "single",
-            "title": "Você está negativado?",
-            "subtitle": "Escolha uma resposta",
-            "value": "negativado",
             "options": [
                 {
                     "id": 1,
-                    "position": 1,
                     "label": "Sim",
+                    "position": 1,
                     "value": "sim"
                 },
                 {
                     "id": 2,
-                    "position": 2,
                     "label": "Não",
+                    "position": 2,
                     "value": "nao"
                 }
-            ]
+            ],
+            "position": 5,
+            "subtitle": "Escolha uma resposta",
+            "title": "Você está negativado?",
+            "type": "single",
+            "value": "negativado"
         }
     ],
-    "endForm": {
-        "subtitle": "Fantástico!",
-        "title": "Encontramos o cartão perfeito para você.",
-        "call": "Para seguir, preencha abaixo:",
-        "fields": [
+    "remoteConfigs": {
+        "bmsKey": "da5743c15646879b3d1a37c16d230ee4",
+        "googleKeys": {
+            "adsKey": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+            "gaKey": "https://connectid.analytics.yahoo.com/connectId-gpt.js",
+            "gtmTag": "https://www.googletagmanager.com/gtm.js?id=GTM-T87Z4LK"
+        },
+        "smartSugestion": {
+            "apiPassword": "abc44vachasfdada555fffhdykljgyjnnhyj",
+            "apiUser": "card-ranks-api",
+            "sugestionEndpoint": "https://recommender-system.plusdin.com.br/v3/cc-short-recomendations-rpp"
+        },
+        "tempBmsKey": "y09laW}kfo{uQv}YuxNB63nMd18|$TQchtQeYmGe{fDBO^s^N)kYk9*zi7#}"
+    },
+    "smartQuiz": true,
+    "subtitle": "(Leva menos de 1 minuto)",
+    "sugestions": {
+        "sugestionConnections": [
             {
-                "id": 1,
-                "position": 1,
-                "type": "text",
-                "label": "Nome:",
-                "fieldValue": "name",
-                "placeholder": "Digite seu nome"
+                "answerCondition": [
+                    {
+                        "answerIndex": 1,
+                        "questionIndex": 1
+                    },
+                    {
+                        "answerIndex": 1,
+                        "questionIndex": 2
+                    },
+                    {
+                        "answerIndex": 1,
+                        "questionIndex": 3
+                    },
+                    {
+                        "answerIndex": 1,
+                        "questionIndex": 4
+                    },
+                    {
+                        "answerIndex": 1,
+                        "questionIndex": 5
+                    }
+                ],
+                "sugestions": [
+                    {
+                        "percentage": 0.5,
+                        "url": "https://www.instagram.com"
+                    },
+                    {
+                        "percentage": 0.5,
+                        "url": "https://www.facebook.com"
+                    }
+                ],
+                "utmCondition": ""
             },
             {
-                "id": 2,
-                "position": 2,
-                "type": "email",
-                "label": "E-mail:",
-                "fieldValue": "email",
-                "placeholder": "Nos informe seu e-mail de contato"
-            },
-            {
-                "id": 3,
-                "position": 3,
-                "type": "tel",
-                "pattern": "([0-9]{2}) [0-9]{5}-[0-9]{4}",
-                "label": "WhatsApp:",
-                "fieldValue": "phone",
-                "placeholder": "(XX) 99999-9999"
+                "answerCondition": [
+                    {
+                        "answerIndex": 2,
+                        "questionIndex": 1
+                    },
+                    {
+                        "answerIndex": 2,
+                        "questionIndex": 2
+                    },
+                    {
+                        "answerIndex": 2,
+                        "questionIndex": 3
+                    },
+                    {
+                        "answerIndex": 2,
+                        "questionIndex": 4
+                    },
+                    {
+                        "answerIndex": 2,
+                        "questionIndex": 5
+                    }
+                ],
+                "sugestions": [
+                    {
+                        "percentage": 0.5,
+                        "url": "https://www.youtube.com"
+                    },
+                    {
+                        "percentage": 0.5,
+                        "url": "https://www.google.com"
+                    }
+                ],
+                "utmCondition": "google"
             }
         ],
-        "button": "VER MEU CARTÃO"
-    },
-    "remoteConfigs": {
-        "googleKeys": {
-            "gtmTag": "https://www.googletagmanager.com/gtm.js?id=GTM-T87Z4LK",
-            "gaKey": "https://connectid.analytics.yahoo.com/connectId-gpt.js",
-            "adsKey": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-        },
-        "bmsKeys": {
-            "apiKey": ""
-        }
-    },
-    "trackings": {
-        "pageLoad": [],
-        "userClick": [],
-        "userAnswer": [],
-        "formSubmit": ["console.log('SUBMIT FORM', getFormData())"]
-    },
-    "conversions": {
-        "headerElements": [],
-        "importedScripts": [{}],
-        "customScripts": [{}],
-        "postConversionWithoutLead": [{}],
-        "postConversionWithLead": [{}],
-        "redirectionParams": [{}]
-    },
-    "recomendation": {
-        "recomendationOptions": [
+        "sugestionOptions": [
             {
                 "id": 1,
                 "name": "facebook",
@@ -239,43 +326,20 @@
                 "name": "instagram",
                 "url": "https://www.instagram.com"
             }
-        ],
-        "recomendationsConnections": [
-            {
-                "utmCondition": "utm_source=google",
-                "answerCondition": [
-                    {
-                        "questionIndex": 1,
-                        "answerIndex": 1
-                    },
-                    {
-                        "questionIndex": 2,
-                        "answerIndex": 1
-                    },
-                    {
-                        "questionIndex": 3,
-                        "answerIndex": 1
-                    },
-                    {
-                        "questionIndex": 4,
-                        "answerIndex": 1
-                    },
-                    {
-                        "questionIndex": 5,
-                        "answerIndex": 1
-                    }
-                ],
-                "recomendations": [
-                    {
-                        "url": "https://www.instagram.com",
-                        "percentage": 0.5
-                    },
-                    {
-                        "url": "https://www.facebook.com",
-                        "percentage": 0.5
-                    }
-                ]
-            }
         ]
-    }
+    },
+    "teste_ab": "control",
+    "title": "Descubra qual é o cartão de crédito ideal para você",
+    "trackings": {
+        "formSubmit": [],
+        "pageLoad": [],
+        "userAnswer": [],
+        "userClick": []
+    },
+    "type": "boxed",
+    "useTerms": {
+        "text": "Li e concordo com os <a class=use-terms>termos de serviço</a> e aceito receber comunicações do Plusdin, que poderão ser canceladas a qualquer momento.",
+        "type": "simple"
+    },
+    "vertical": "cartao"
 }
